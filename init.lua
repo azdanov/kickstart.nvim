@@ -81,19 +81,7 @@ vim.opt.rtp:prepend(lazypath)
 -- [[ Configure and install plugins ]]
 require('lazy').setup({
   'tpope/vim-sleuth',
-  {
-    'zbirenbaum/copilot.lua',
-    cmd = 'Copilot',
-    event = 'InsertEnter',
-    opts = {
-      suggestion = { enabled = true },
-      panel = { enabled = true },
-      filetypes = {
-        markdown = true,
-        help = true,
-      },
-    },
-  },
+  'github/copilot.vim',
   {
     'lewis6991/gitsigns.nvim',
     opts = {
